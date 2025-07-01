@@ -12,7 +12,17 @@
 }
 
 .hero-title {
+    font-family: 'oswald', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 3.5rem;
+    color: white;
+    margin: 0;
+    line-height: 1.1;
     animation: fadeInUp 1.2s ease-out;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.85);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    -webkit-text-stroke: 0.8px black;
 }
 
 /* Accent Button Styling */
@@ -42,6 +52,7 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Intro Overlay */
 #intro-overlay {
     position: fixed;
     z-index: 9999;
@@ -66,17 +77,19 @@ html {
     }
 }
 
+/* Scroll Down Arrow */
 .scroll-down {
-    position: absolute; /* Position relative to outer div */
-    bottom: 40px; /* 40px from bottom */
-    left: 50%; /* Horizontally centered */
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
     transform: translateX(-50%);
-    font-size: 2rem; /* Arrow size */
-    color: white; /* Visible on dark bg */
+    font-size: 2rem;
+    color: white;
     animation: bounce 1.5s infinite;
-    cursor: pointer; /* Optional: shows pointer on hover */
-    user-select: none; /* Prevent text selection */
+    cursor: pointer;
+    user-select: none;
 }
+
 @keyframes bounce {
     0%, 100% {
         transform: translate(-50%, 0);
@@ -85,8 +98,4 @@ html {
     50% {
         transform: translate(-50%, 10px);
     }
-}
-
-.scroll-down {
-    /* your styles */
 }

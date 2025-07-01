@@ -1,15 +1,18 @@
 ﻿@{
     ViewBag.Title = "ELMSTREET Clothing";
 }
+
 <!-- Hero Section -->
 <div style="
-     height: 100vh;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     background: url('https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1950&q=80') no-repeat center center;
-     background-size: cover;
+    position: relative;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+    background-size: cover;
 ">
+    ">
     <div style="
         background-color: rgba(34, 34, 34, 0.8);
         padding: 20px 40px;
@@ -18,7 +21,8 @@
         max-width: 600px;
         text-align: center;
     ">
-        <h1 style="
+        <h1 class="hero-title" style="
+
             font-family: Helvetica, Arial, sans-serif;
             color: white;
             font-weight: 700;
@@ -29,7 +33,10 @@
             ELMSTREET CLOTHING
         </h1>
     </div>
+    <div class="scroll-down">&#8595;</div>
 </div>
+
+<div style="margin-bottom: 100px;"></div>
 
 <!-- About Section -->
 <div class="container mb-5" id="about">
@@ -44,9 +51,11 @@
                 <!-- Displaying your favicon image/logo -->
                 <img src="~/favicon.ico" class="img-fluid rounded shadow mt-4" alt="ELMSTREET Icon" style="max-width: 120px;" />
             </div>
-         </div>       
+        </div>
     </div>
 </div>
+
+<div style="margin-bottom: 100px;"></div>
 
 <!-- Products Section -->
 <div class="bg-light py-5" id="products">
@@ -78,7 +87,7 @@
                     <img src="https://via.placeholder.com/300x200?text=Cargo+Pants" class="card-img-top" alt="Cargos">
                     <div class="card-body">
                         <h5 class="elmstreetexotics.za"></h5>
-                        <p class="card-text">Book MD Car through ELMSTREETExotics.za .</p>
+                        <p class="card-text">Book MD Car through ELMSTREETexotics.za .</p>
                         <a href="#" class="btn btn-dark">View Item</a>
                     </div>
                 </div>
@@ -86,6 +95,8 @@
         </div>
     </div>
 </div>
+
+<div style="margin-bottom: 100px;"></div>
 
 <!-- Footer -->
 <footer class="bg-dark text-white text-center py-4 mt-5">
@@ -97,3 +108,6 @@
         </p>
     </div>
 </footer>
+
+
+
